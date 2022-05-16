@@ -2,13 +2,13 @@
 
 bool RecursiveBinarySearch::search(std::vector<int> list, int data)
 {
-    std::size_t low = 0;
-    std::size_t high = list.size() - 1;
+    int low = 0;
+    int high = (int)list.size() - 1;
     
     while (low <= high)
     {
-        std::size_t mid = (low + high) / 2;
-        std::size_t value = list[mid];
+        int mid = (low + high) / 2;
+        int value = list[mid];
         
         if (value < data)
         {

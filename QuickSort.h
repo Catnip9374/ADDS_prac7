@@ -8,8 +8,8 @@ class QuickSort : public Sort
 public:
 	virtual std::vector<int> sort(std::vector<int> list);
 private:
-	void quick_sort(std::vector<int>& list, std::size_t low, std::size_t high);
-	std::size_t paritition(std::vector<int>& list, std::size_t low, std::size_t high);
+	void quick_sort(std::vector<int>& list, int low, int high);
+	int paritition(std::vector<int>& list, int low, int high);
 };
 
 #endif
